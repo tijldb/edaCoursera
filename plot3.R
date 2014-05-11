@@ -15,7 +15,7 @@ dt$dt <- strptime(dt$Datetime, '%d/%m/%Y %H:%M') # create a datetime object
 
 #plot 3
 png('plot3.png',width=480,height=480)
-plot(dt$dt,dt$Sub_metering_1,ylab='Energy Sub Metering',xlab='',type='line')
+plot(dt$dt,dt$Sub_metering_1,ylab='Energy sub metering',xlab='',type='line')
 lines(dt$dt,dt$Sub_metering_2,col='red')
 lines(dt$dt,dt$Sub_metering_3,col='blue')
 legend("topright",legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'), col=c('black','red','blue'), lty=1,lwd=1.5)
